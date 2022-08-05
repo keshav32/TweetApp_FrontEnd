@@ -115,9 +115,14 @@ export class RegisterComponent implements OnInit {
         console.log(this.user)
 
         this.service.Register(this.user).subscribe(res => {
-          alert("Successfully registered");
-          console.log(res);
-          this.route.navigateByUrl('HOME');
+          if (res !== "Successfully registerd") {
+            alert(res + " Try again")
+            this.onReset();
+          } else {
+            alert("Successfully registered");
+            console.log(res);
+            this.route.navigateByUrl('HOME');
+          }
         },
           err => {
             alert("Failed to Register! Try again")
