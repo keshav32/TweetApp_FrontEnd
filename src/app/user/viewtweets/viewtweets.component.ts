@@ -68,7 +68,9 @@ export class ViewtweetsComponent implements OnInit {
   PostComments(item: UserTweets) {
     let comment = this.form.value['comment']
     this.service.PostComment(comment, this.username, item.userName, item.tweets).subscribe(res => {
-      alert("replies")
+      alert("Comment Successfull");
+      this.form.reset();
+      this.Comments(item);
       console.log(res)
       this.route.navigateByUrl('VIEWTWEETS')
     },

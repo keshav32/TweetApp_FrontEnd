@@ -96,7 +96,9 @@ Searchusers()
     let comment = this.form.value['comment']
     let uname = String(localStorage.getItem('Username'))
     this.service.PostComment(comment,uname,item.userName, item.tweets).subscribe(res=>{
-    alert("replies")
+    alert("Comment Successfull");
+    this.form.reset();
+      this.Comments(item);
   console.log(res)
   this.route.navigateByUrl('VIEWTWEETS')
     },

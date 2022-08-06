@@ -140,10 +140,11 @@ export class ViewprofileComponent implements OnInit {
     this.service.GetLikes(item.userName, item.tweets).subscribe(res => {
       this.count.likes = res;
       console.log(this.count);
+      this.Profile();
     }, err => {
       console.log(err)
     })
-    this.Profile();
+   
   }
   logout() {
 

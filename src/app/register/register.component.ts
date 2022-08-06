@@ -155,7 +155,7 @@ export class RegisterComponent implements OnInit {
 
   uploadFile() {
     this.imageurl = localStorage.getItem('ProfileImageUrl');
-    console.log(this.imageurl);
+    alert("Image Uploaded Successfully");
   }
 }
 
