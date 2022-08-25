@@ -44,14 +44,14 @@ import { AngularFireModule } from '@angular/fire';
     RouterModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSyCqFc5DMFtV1Ba83halyFmTiCgHnhGdu60",
-      authDomain: "tweetappuiangular.firebaseapp.com",
-      databaseURL: "https://tweetappuiangular-default-rtdb.firebaseio.com",
-      projectId: "tweetappuiangular",
-      storageBucket: "tweetappuiangular.appspot.com",
-      messagingSenderId: "692850185226",
-      appId: "1:692850185226:web:027db7146458a378f63bf3",
-      measurementId: "G-8NQ7W804QY"
+      apiKey: "AIzaSyBNo0VaAhOYGUXWjETe6aFuiL49Lx-mz4M",
+      authDomain: "gencnexttweetapp.firebaseapp.com",
+      databaseURL: "https://gencnexttweetapp-default-rtdb.firebaseio.com",
+      projectId: "gencnexttweetapp",
+      storageBucket: "gencnexttweetapp.appspot.com",
+      messagingSenderId: "544960811957",
+      appId: "1:544960811957:web:c5fbc52ff6e94070d27ffc",
+      measurementId: "G-1NHTCXV2RT"
     })
   ],
   providers: [TweetappService],

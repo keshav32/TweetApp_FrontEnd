@@ -53,12 +53,12 @@ export class UserLandingPageComponent implements OnInit {
   Search() {
     this.uname = this.form.value["username"]
     localStorage.setItem("uname", this.uname);
-    this.route.navigateByUrl('/SEARCH TWEET');
+    this.route.navigateByUrl('/SEARCHTWEET');
 
   }
   SearchUser(item: User) {
     localStorage.setItem("uname", item.username);
-    this.route.navigateByUrl('/SEARCH TWEET');
+    this.route.navigateByUrl('/SEARCHTWEET');
   }
   isReplyClicked(index: number) {
     console.log(index);

@@ -118,6 +118,7 @@ export class RegisterComponent implements OnInit {
           if (res !== "Successfully registerd") {
             alert(res + " Try again")
             this.onReset();
+            this.readyToRegister = false;
           } else {
             alert("Successfully registered");
             console.log(res);
@@ -128,6 +129,7 @@ export class RegisterComponent implements OnInit {
             alert("Failed to Register! Try again")
             console.log(err);
             this.onReset();
+            this.readyToRegister = false;
           }
         );
       }
@@ -137,6 +139,7 @@ export class RegisterComponent implements OnInit {
   onReset() {
     this.submitted = false;
     this.userForm.reset();
+    this.readyToRegister = false;
   }
   fileEvent(event: any) {
     // get the file from event

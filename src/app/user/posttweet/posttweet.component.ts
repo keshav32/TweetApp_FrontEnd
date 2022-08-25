@@ -62,7 +62,7 @@ export class PosttweetComponent implements OnInit {
       this.service.PostTweet(this.tweet).subscribe(res => {
         console.log(res);
         alert("Tweet Posted Successfully");
-        this.route.navigateByUrl('VIEW PROFILE');
+        this.route.navigateByUrl('VIEWPROFILE');
       },
         err => {
           alert("Failed to Post")

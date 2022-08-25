@@ -28,7 +28,7 @@ export class TweetappService {
   public PostTweet(tweet:Tweet):Observable<String>
   {
    const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
-   return this.http.post<String>(this.url+'tweet',tweet,{​​​​​​​​ headers, responseType: 'text' as 'json'})
+   return this.http.post<String>(this.url+'add',tweet,{​​​​​​​​ headers, responseType: 'text' as 'json'})
   }
   public GetAllUsers():Observable<any>
   {
@@ -69,7 +69,7 @@ export class TweetappService {
   public DeleteTweet(username:string,tweet:string):Observable<String>
   {    
    const headers = new HttpHeaders().set('Content-Type', 'text/html; charset=utf-8');
-   return this.http.delete<String>(this.url+'tweetdelete/'+escape(username)+','+escape(tweet),{ headers, responseType: 'text' as 'json'}) 
+   return this.http.delete<String>(this.url+'delete/'+escape(username)+','+escape(tweet),{ headers, responseType: 'text' as 'json'}) 
   }
   public GetAllComments(username:string,tweet:string):Observable<any>
   {    

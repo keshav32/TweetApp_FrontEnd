@@ -20,8 +20,8 @@ const routes: Routes = [
   { path: 'POST TWEET', component: PosttweetComponent },
   { path: 'CHANGEPASSWORD', component: ChangepasswordComponent, canActivate: [Guardservice] },
   { path: 'FORGOTPASSWORD', component: ForgotpasswordComponent },
-  { path: 'SEARCH TWEET', component: SearchtweetComponent, canActivate: [Guardservice] },
-  { path: 'VIEW PROFILE', component: ViewprofileComponent, canActivate: [Guardservice] },
+  { path: 'SEARCHTWEET', component: SearchtweetComponent, canActivate: [Guardservice] },
+  { path: 'VIEWPROFILE', component: ViewprofileComponent, canActivate: [Guardservice] },
   { path: '', redirectTo: 'HOME', pathMatch: 'full' }
 ];
 
